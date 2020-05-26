@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--altid unik title-->
+    <title>Thisted Bryghus forside</title>
+    <meta name="description" content="Læs mere om Thisted Bryghus, deres økologiske øl, sodavand og saft. Forhandlerlister, smagsoplevelser og nyheder.">
+    <!--LAV BESKRIVELSE I SIDEN AF CONTENT-->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/forhandler.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+   <!-- nav til web -->
+    <header>
+        <!-- følgende kode er lånt her: https://codepen.io/912lab/pen/LsplC -->
+
+
+        <div class="soegefelt">
+            <form id="demo-2">
+                <input type="search" placeholder="Search">
+            </form>
+        </div>
+
+        <!-- følgende kode er lånt her: https://codepen.io/912lab/pen/LsplC / SLUT -->
+
+        <div class="navbar">
+            <div class="tblogo"><a href="index.html">
+                    <!-- Denne kode er lånt her https://www.youtube.com/watch?v=_rkMYalklOI --><img src="images/logoer/tblogo.png" onmouseover="this.src='images/logoer/tborangelogo.png'" onmouseout="this.src='images/logoer/tblogo.png'" class="tblogo" alt="thisted bryghus logo"></a></div> <!-- Slutter her -->
+            <br>
+            <div class="dropdown"><a href="produkter.html"><button class="dropbutton">Produkter</button></a>
+                <div class="dropdown-content">
+                    <a href="forhandleroversigt.html">Forhandlerliste</a>
+                </div>
+            </div>
+
+            <div class="dropdown"><a href="nyheder.html"><button class="dropbutton">Nyheder</button></a>
+                <div class="dropdown-content">
+                    <a href="nyheder.html">Events</a>
+                </div>
+            </div>
+
+            <div class="dropdown"><a href="nyheder.html"><button class="dropbutton">
+                        Om bryghuset</button></a>
+                <div class="dropdown-content">
+                    <a href="ombryghuset.html">Bryghusets historie</a>
+                    <a href="nyheder.html">Awards</a>
+
+                </div>
+            </div>
+
+            <div class="dropdown"><a href="aktionaerer.html"><button class="dropbutton">
+                        Aktionærer</button></a>
+                <div class="dropdown-content">
+                    <a href="aktionaerer.html">Køb en aktie</a>
+                    <a href="aktionaerer.html">General forsamling</a>
+                    <a href="aktionaerer.html">Regnskab</a>
+                </div>
+            </div>
+
+            <div class="dropdown"><a href="kontakt.html"><button class="dropbutton">
+                        Kontakt</button></a>
+                <div class="dropdown-content">
+                    <a href="kontakt.html">Medarbejdere</a>
+                    <a href="kontakt.html">Sponsorater</a>
+                    <a href="kontakt.html">For studerende</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- nav til mobil -->
+        <!-- nedenstående er lånt fra     https://codepen.io/slyka85/pen/LbXYKQ?editors=1111 -->
+        <div id="menu-container">
+            <a href="index.html"><img src="images/logoer/tblogo.png" alt="thisted bryghus logo"></a>
+            <div id="menu-wrapper">
+                <div id="hamburger-menu"><span></span><span></span><span></span></div>
+                <!-- hamburger-menu -->
+            </div>
+            <!-- menu-wrapper -->
+            <ul class="menu-list accordion">
+                <li id="nav1" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link">Produkter</a>
+                </li>
+                <!-- accordion-toggle -->
+                <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="produkter.html">Vores produkter</a></li>
+                    <li><a class="head" href="forhandleroversigt.html">Forhandlere</a></li>
+                </ul>
+                <!-- menu-submenu accordon-content-->
+                <li id="nav2" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" >Nyheder</a>
+                </li>
+                <!-- accordion-toggle -->
+                <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="nyheder.html">Nyheder</a></li>
+                    <li><a class="head" href="nyheder.html">Events</a></li>
+
+                </ul>
+                <!-- menu-submenu accordon-content-->
+                <li id="nav3" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link">Om bryghuset</a>
+                </li>
+                <!-- accordion-toggle -->
+                <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="kontakt.html">Om os</a></li>
+                    <li><a class="head" href="ombryghuset.html">Bryghusets historie</a></li>
+                    <li><a class="head" href="kontakt.html">Awards</a></li>
+                </ul>
+                <!-- menu-submenu accordon-content-->
+                <!-- menu-submenu accordon-content-->
+                <li id="nav4" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link">Aktionærer</a>
+                </li>
+                <!-- accordion-toggle -->
+                <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="aktionaerer.html">Køb en aktie</a></li>
+                    <li><a class="head" href="aktionaerer.html">Generalforsamling</a></li>
+                    <li><a class="head" href="aktionaerer.html">Regnskab</a></li>
+
+                </ul>
+                <!-- menu-submenu accordon-content-->
+                <!-- menu-submenu accordon-content-->
+                <li id="nav5" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link">Kontakt</a>
+                </li>
+                <!-- accordion-toggle -->
+                <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="kontakt.html">Kontakt</a></li>
+
+                    <li><a class="head" href="kontakt.html">Medarbejdere</a></li>
+                    <li><a class="head" href="kontakt.html">Sponsorater</a></li>
+                    <li><a class="head" href="kontakt.html">For studerende</a></li>
+
+                </ul>
+                <!-- menu-submenu accordon-content-->
+                <!-- søge felt-->
+
+                <div class="soegefelt-mobil">
+                    <form id="demo-2">
+                        <input type="search" placeholder="Search">
+                    </form>
+                </div>
+                <!-- søge felt slut-->
+
+            </ul>
+            <!-- menu-list accordion-->
+        </div>
+        <!-- menu-container -->
+        <!-- kode er lånt fra     https://codepen.io/slyka85/pen/LbXYKQ?editors=1111 // SLUT -->
+
+    </header>
+
+
+
+    <div class="billedtop">
+        <h1>Forhandleroversigt</h1>
+    </div>
+
+    <main>
+        <h2>Du kan finde et bredt sortiment af vores produkter hos: </h2>
+
+        <div class="oversigt">
+            <div class="forhandler">
+                <img src="images/forhandler-logoer/bilka-logo.png" alt="bilka">
+            </div>
+
+            <div class="forhandler">
+                <img src="images/forhandler-logoer/foetex_logo_rgb.png" alt="føtex">
+            </div>
+
+            <div class="forhandler">
+                <img src="images/forhandler-logoer/netto-logo.png" alt="netto">
+            </div>
+
+            <div class="forhandler">
+                <img src="images/forhandler-logoer/Rema-logo.png" alt="rema 1000">
+            </div>
+
+            <div class="forhandler">
+                <img src="images/forhandler-logoer/fakta-logo-2.png" alt="fakta">
+            </div>
+
+            <div class="forhandler">
+                <img src="images/forhandler-logoer/menu-logo.png" alt="meny">
+            </div>
+
+            <div class="forhandler">
+                <img src="images/forhandler-logoer/Brugsen-logo.png" alt="Super brugsen">
+            </div>
+
+            <div class="forhandler">
+                <img src="images/forhandler-logoer/kvickly-logo.png" alt="Kvickly">
+            </div>
+
+            <div class="forhandler">
+                <img src="images/forhandler-logoer/irma-logo.png" alt="Irma">
+            </div>
+
+            <div class="forhandler">
+                <img src="images/forhandler-logoer/loevbjerg-logo.png" alt="Løvbjerg">
+            </div>
+
+            <div class="forhandler">
+                <img src="images/forhandler-logoer/ABC-Lavpris-logo.png" alt="ABC lavpris">
+            </div>
+
+            <div class="forhandler">
+                <img src="images/forhandler-logoer/min-koebmand-logo.png" alt="Min købmand">
+            </div>
+        </div>
+
+        <div class="depoter">
+            <h2>
+                Selvstændige depoter
+            </h2>
+            <p>
+                Herudover finder du vores produkter hos en lang række lokale forhandlere/butikker, der får vores produkter distribueret ud af følgende lokale distributører, der kan svare på, hvem der har vores produkter lokalt:
+            </p>
+
+        </div>
+
+
+        <button class="accordion-forhandler">Jylland:</button>
+        <div class="panel">
+            <div class="en">
+                <p>Depot Thisted</p>
+                <p class="skjul">Depot Thy, Mors, Hanherred</p>
+                <p>Thisted</p>
+                <p>97 92 67 46</p>
+                <p class="skjul">www.depot-thisted.dk</p>
+                <a class="skjul-pc" href="https://www.depot-thisted.dk">link</a>
+            </div>
+
+            <div class="to">
+                <p>KBT</p>
+                <p class="skjul">Faøl Nordjylland</p>
+                <p>Vestbjerg</p>
+                <p>51623033</p>
+                <p class="skjul">www.thy-fadøl.dk</p>
+                <a class="skjul-pc" href="https://xn--thy-fadl-c5a.dk/">link</a>
+            </div>
+
+            <div class="en">
+                <p>Kildespring</p>
+                <p class="skjul">Nordjylland</p>
+                <p>Frederikshavn</p>
+                <p>70260701</p>
+                <p class="skjul">www.kildespring.dk</p>
+                <a class="skjul-pc" href="http://www.kildespring.dk/">link</a>
+            </div>
+
+            <div class="to">
+                <p>Øl- og Vandmanden</p>
+                <p class="skjul">Depot Nord- og Midtjylland</p>
+                <p>Nørresundby</p>
+                <p>29887960</p>
+                <p class="skjul">www.depot-aalborg.dk</p>
+                <a class="skjul-pc" href="https://www.depot-aalborg.dk/">link</a>
+            </div>
+
+            <div class="en">
+                <p>Kærby Slush Ice</p>
+                <p class="skjul"> Fadøl Nordjylland</p>
+                <p>Aalborg</p>
+                <p>60617019</p>
+                <p class="skjul">www.kaerbyslushice.dk</p>
+                <a class="skjul-pc" href="https://kaerbyslushice.dk/">link</a>
+            </div>
+
+            <div class="to">
+                <p>Vodskov Festudlejning</p>
+                <p class="skjul">Fadøl Nordjylland</p>
+                <p>Vodskov</p>
+                <p>26845809</p>
+                <p class="skjul">www.vodskov-festudlejning.dk</p>
+                <a class="skjul-pc" href="https://www.vodskov-festudlejning.dk/">link</a>
+            </div>
+
+            <div class="en">
+                <p>One Pint</p>
+                <p class="skjul">Hele landet</p>
+                <p>Mariager</p>
+                <p>98525355</p>
+                <p class="skjul">www.onepint.dk</p>
+                <a class="skjul-pc" href="https://www.onepint.dk/">link</a>
+            </div>
+
+            <div class="to">
+                <p>Tastyland</p>
+                <p class="skjul">Aarhus området</p>
+                <p>Hobro</p>
+                <p>96586020</p>
+                <p class="skjul">www.tastyland.dk</p>
+                <a class="skjul-pc" href="https://www.tastyland.dk/">link</a>
+            </div>
+
+            <div class="en">
+                <p>Voldby Købmandsgård</p>
+                <p class="skjul">Aarhus/Midjylland</p>
+                <p>Hammel</p>
+                <p>86962944</p>
+                <p class="skjul">www.voldbykoebmandsgaard.dk</p>
+                <a class="skjul-pc" href="https://voldbykoebmandsgaard.dk/">link</a>
+            </div>
+
+            <div class="to">
+                <p>R.H. Serviceudlejning</p>
+                <p class="skjul">Fadøl Aarhus</p>
+                <p>Aabyhøj</p>
+                <p>28197232</p>
+                <p class="skjul">www.rhfest.dk</p>
+                <a class="skjul-pc" href="https://rhfest.dk/">link</a>
+            </div>
+
+            <div class="en">
+                <p>Depot Østjylland</p>
+                <p class="skjul">Aarhus området</p>
+                <p>Højbjerg</p>
+                <p>70209110</p>
+                <p class="skjul">www.depotoestjylland.dk</p>
+                <a class="skjul-pc" href="http://www.depotoestjylland.dk/">link</a>
+            </div>
+        </div>
+
+        <button class="accordion-forhandler">Fyn:</button>
+        <div class="panel">
+            <div class="to">
+                <p>Depot Vestfyn</p>
+                <p class="skjul">Fyn</p>
+                <p>Assens</p>
+                <p>28420233 </p>
+                <p class="skjul">www.depot-vestfyn.dk</p>
+                <a class="skjul-pc" href="https://www.depot-vestfyn.dk/humle-depotet/">link</a>
+            </div>
+
+            <div class="en">
+                <p>Depot Sydfyn</p>
+                <p class="skjul">Fyn</p>
+                <p>Vester Skerninge</p>
+                <p>21447238</p>
+                <p class="skjul">www.depotsydfyn.dk</p>
+                <a class="skjul-pc" href="http://depotsydfyn.dk/">link</a>
+            </div>
+        </div>
+
+        <button class="accordion-forhandler">Sjælland:</button>
+        <div class="panel">
+            <div class="to">
+                <p>Byens Depot</p>
+                <p class="skjul">Sjælland</p>
+                <p>Hvidovre</p>
+                <p>70259555</p>
+                <p class="skjul">www.byensdepot.dk</p>
+                <a class="skjul-pc" href="https://www.byensdepot.dk/">link</a>
+            </div>
+
+            <div class="en">
+                <p>Soft Ambrosia</p>
+                <p class="skjul">Sjælland</p>
+                <p>Hvidovre</p>
+                <p>70707023</p>
+                <p class="skjul">www.ambrosiagroup.dk</p>
+                <a class="skjul-pc" href="https://ambrosiagroup.dk/">link</a>
+            </div>
+
+            <div class="to">
+                <p>Øldepotet</p>
+                <p class="skjul">Sjælland</p>
+                <p>Kastrup</p>
+                <p>21678524 </p>
+                <p class="skjul">www.hancock-koebenhavn.dk</p>
+                <a class="skjul-pc" href="http://www.hancock-koebenhavn.dk/">link</a>
+            </div>
+
+            <div class="en">
+                <p>Humleekspressen</p>
+                <p class="skjul">Sjælland</p>
+                <p>Hvidovre</p>
+                <p>39183737</p>
+                <p class="skjul">www.humleekspressen.dk</p>
+                <a class="skjul-pc" href="https://www.depot-vestfyn.dk/humle-depotet/produkter/brunstein">link</a>
+            </div>
+
+            <div class="to">
+                <p>Sjøbeck Øl og Vand </p>
+                <p class="skjul">Sjælland</p>
+                <p>Rødovre </p>
+                <p>43961605</p>
+                <p class="skjul">www.sjobeck.dk</p>
+                <a class="skjul-pc" href="https://www.sjobeck.dk/">link</a>
+            </div>
+        </div>
+
+    </main>
+
+     <footer>
+        <div class="venstre">
+            <a href="index.html"><img src="images/logoer/logo%20hvid.png" alt="Thisted Bryghus logo i hvid"></a>
+            <a href="produkter.html">Produkter</a>
+            <a href="nyheder.html">Nyheder</a>
+            <a href="ombryghuset.html">Om bryghuset</a>
+            <a href="aktionaerer.html">Aktionærer</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="">Cookie- og privatlivspolitik</a>
+        </div>
+
+        <form class="midt">
+            <div class="container">
+                <h3>Tilmeld dig vores nyhedsbrev</h3>
+            </div>
+
+            <div>
+                <input type="text" placeholder="Navn" name="name" required>
+                <input type="text" placeholder="Din email" name="mail" required>
+            </div>
+
+            <div>
+                <input type="submit" value="Tilmeld">
+            </div>
+        </form>
+
+
+        <div class="hoejre">
+            <ul>
+                <li>A/S THISTED BRYGHUS</li>
+                <br>
+                <li>Bryggerivej 10</li>
+                <li>7700 Thisted</li>
+                <li>Danmark</li>
+                <br>
+                <li>+45 97 92 23 22</li>
+                <br>
+                <li>thy@thisted-bryghus.dk</li>
+            </ul>
+        </div>
+
+        <div class="bund">
+            <div class="bundvenstre">
+                <p>© 2020 Thisted Bryghus</p>
+                <a href="https://thisted-bryghus.dk/media/1300/oeko-certifikat-2019.pdf"><img src="images/oeko.png" alt="Statskontrolleret økologisk logo"></a>
+                <a href="https://www.findsmiley.dk/27245"><img src="images/kontrolrapport.png" alt="Kontrolrapport logo"></a>
+            </div>
+
+            <div class="bundhoejre">
+                <a href="https://www.facebook.com/thistedbryghus/?epa=SEARCH_BOX"><img src="images/facebook.png" alt="Facebook logo"></a>
+                <a href="https://www.instagram.com/thistedbryghus/?hl=da"><img src="images/insta.png" alt="Instagram logo"></a>
+                <a href="https://www.youtube.com/channel/UCIF9BP-ya_74Qa5ADLA35KQ"><img src="images/yt.png" alt="Youtube logo"></a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/forhandler-accordion.js"></script>
+    <script src="js/burgermenu.js"></script>
+
+</body>
+
+</html>

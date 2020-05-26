@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--altid unik title-->
+    <title>Thisted Bryghus forside</title>
+    <meta name="description" content="Læs mere om Thisted Bryghus, deres økologiske øl, sodavand og saft. Forhandlerlister, smagsoplevelser og nyheder.">
+    <!--LAV BESKRIVELSE I SIDEN AF CONTENT-->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/forside.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <!-- nav til web -->
+    <header class="forsideheader">
+        <!-- følgende kode er lånt her: https://codepen.io/912lab/pen/LsplC -->
+
+
+        <div class="soegefelt">
+            <form id="demo-2">
+                <input type="search" placeholder="Search">
+            </form>
+        </div>
+
+        <!-- følgende kode er lånt her: https://codepen.io/912lab/pen/LsplC / SLUT -->
+
+        <div class="navbar">
+            <div class="tblogo"><a href="index.html">
+                    <!-- Denne kode er lånt her https://www.youtube.com/watch?v=_rkMYalklOI --><img src="images/logoer/tblogo.png" onmouseover="this.src='images/logoer/tborangelogo.png'" onmouseout="this.src='images/logoer/tblogo.png'" class="tblogo" alt="thisted bryghus logo"></a></div> <!-- Slutter her -->
+            <br>
+            <div class="dropdown"><a href="produkter.html"><button class="dropbutton">Produkter</button></a>
+                <div class="dropdown-content">
+                    <a href="forhandleroversigt.html">Forhandlerliste</a>
+                </div>
+            </div>
+
+            <div class="dropdown"><a href="nyheder.html"><button class="dropbutton">Nyheder</button></a>
+                <div class="dropdown-content">
+                    <a href="nyheder.html">Events</a>
+                </div>
+            </div>
+
+            <div class="dropdown"><a href="#"><button class="dropbutton">
+                        Om bryghuset</button></a>
+                <div class="dropdown-content">
+                    <a href="ombryghuset.html">Bryghusets historie</a>
+                    <a href="nyheder.html">Awards</a>
+
+                </div>
+            </div>
+
+            <div class="dropdown"><a href="aktionaerer.html"><button class="dropbutton">
+                        Aktionærer</button></a>
+                <div class="dropdown-content">
+                    <a href="aktionaerer.html">Køb en aktie</a>
+                    <a href="aktionaerer.html">General forsamling</a>
+                    <a href="aktionaerer.html">Regnskab</a>
+                </div>
+            </div>
+
+            <div class="dropdown"><a href="kontakt.html"><button class="dropbutton">
+                        Kontakt</button></a>
+                <div class="dropdown-content">
+                    <a href="kontakt.html">Medarbejdere</a>
+                    <a href="kontakt.html">Sponsorater</a>
+                    <a href="kontakt.html">For studerende</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- nav til mobil -->
+        <!-- nedenstående er lånt fra     https://codepen.io/slyka85/pen/LbXYKQ?editors=1111 -->
+        <div id="menu-container">
+            <a href="index.html"><img src="images/logoer/tblogo.png" alt="thisted bryghus logo"></a>
+            <div id="menu-wrapper">
+                <div id="hamburger-menu"><span></span><span></span><span></span></div>
+                <!-- hamburger-menu -->
+            </div>
+            <!-- menu-wrapper -->
+            <ul class="menu-list accordion">
+                <li id="nav1" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link">Produkter</a>
+                </li>
+                <!-- accordion-toggle -->
+                <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="produkter.html">Vores produkter</a></li>
+                    <li><a class="head" href="forhandleroversigt.html">Forhandlere</a></li>
+                </ul>
+                <!-- menu-submenu accordon-content-->
+                <li id="nav2" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" >Nyheder</a>
+                </li>
+                <!-- accordion-toggle -->
+                <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="nyheder.html">Nyheder</a></li>
+                    <li><a class="head" href="nyheder.html">Events</a></li>
+
+                </ul>
+                <!-- menu-submenu accordon-content-->
+                <li id="nav3" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link">Om bryghuset</a>
+                </li>
+                <!-- accordion-toggle -->
+                <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="kontakt.html">Om os</a></li>
+                    <li><a class="head" href="ombryghuset.html">Bryghusets historie</a></li>
+                    <li><a class="head" href="kontakt.html">Awards</a></li>
+                </ul>
+                <!-- menu-submenu accordon-content-->
+                <!-- menu-submenu accordon-content-->
+                <li id="nav4" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link">Aktionærer</a>
+                </li>
+                <!-- accordion-toggle -->
+                <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="aktionaerer.html">Køb en aktie</a></li>
+                    <li><a class="head" href="aktionaerer.html">Generalforsamling</a></li>
+                    <li><a class="head" href="aktionaerer.html">Regnskab</a></li>
+
+                </ul>
+                <!-- menu-submenu accordon-content-->
+                <!-- menu-submenu accordon-content-->
+                <li id="nav5" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link">Kontakt</a>
+                </li>
+                <!-- accordion-toggle -->
+                <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="kontakt.html">Kontakt</a></li>
+
+                    <li><a class="head" href="kontakt.html">Medarbejdere</a></li>
+                    <li><a class="head" href="kontakt.html">Sponsorater</a></li>
+                    <li><a class="head" href="kontakt.html">For studerende</a></li>
+
+                </ul>
+                <!-- menu-submenu accordon-content-->
+                <!-- søge felt-->
+
+                <div class="soegefelt-mobil">
+                    <form id="demo-2">
+                        <input type="search" placeholder="Search">
+                    </form>
+                </div>
+                <!-- søge felt slut-->
+
+            </ul>
+            <!-- menu-list accordion-->
+        </div>
+        <!-- menu-container -->
+        <!-- kode er lånt fra     https://codepen.io/slyka85/pen/LbXYKQ?editors=1111 // SLUT -->
+
+    </header>
+
+    <main>
+        <div class="container-main">
+            <div class="galleri">
+                <img class="aarets-bh" src="images/aarets-bryghus-op.png" alt="">
+                <h2>Har du smagt de nye signaturøl?</h2>
+                <img class="galleri-bg" src="images/sweet-gale3.png" alt="">
+
+                <a href="produkter.html" class="signatur-knap">Se udvalg</a>
+            </div>
+
+            <div class="smag-thy">
+                <img class="bg" src="images/smag-thy-op2.jpg" alt="Flot billede af et Thysk landskab">
+                <h2>Smagen af økologisk øl <br> kommer fra Thy..</h2>
+                <img class="oel" src="images/tboel/oekopilsner.png" alt="Økologisk Thy Pilsner">
+                <a href="oekoprodukter.html" class="udvalg">Se udvalg</a>
+            </div>
+
+            <div class="forhandlerliste">
+                <a href="forhandleroversigt.html" class="listelink">Se forhandlerliste</a>
+            </div>
+        </div>
+
+        <div class="smagsoplevelser">
+            <img src="images/tbmark-op.jpg" alt="Skønt landskab fra Thy">
+            <h2>Smagsoplevelser</h2><br>
+            <a href="#" class="oplevelse">Book smagsoplevelse</a>
+        </div>
+    </main>
+         <footer>
+        <div class="venstre">
+            <a href="index.html"><img src="images/logoer/logo%20hvid.png" alt="Thisted Bryghus logo i hvid"></a>
+            <a href="produkter.html">Produkter</a>
+            <a href="nyheder.html">Nyheder</a>
+            <a href="ombryghuset.html">Om bryghuset</a>
+            <a href="aktionaerer.html">Aktionærer</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="">Cookie- og privatlivspolitik</a>
+        </div>
+
+        <form class="midt">
+            <div class="container">
+                <h3>Tilmeld dig vores nyhedsbrev</h3>
+            </div>
+
+            <div>
+                <input type="text" placeholder="Navn" name="name" required>
+                <input type="text" placeholder="Din email" name="mail" required>
+            </div>
+
+            <div>
+                <input type="submit" value="Tilmeld">
+            </div>
+        </form>
+
+
+        <div class="hoejre">
+            <ul>
+                <li>A/S THISTED BRYGHUS</li>
+                <br>
+                <li>Bryggerivej 10</li>
+                <li>7700 Thisted</li>
+                <li>Danmark</li>
+                <br>
+                <li>+45 97 92 23 22</li>
+                <br>
+                <li>thy@thisted-bryghus.dk</li>
+            </ul>
+        </div>
+
+        <div class="bund">
+            <div class="bundvenstre">
+                <p>© 2020 Thisted Bryghus</p>
+                <a href="https://thisted-bryghus.dk/media/1300/oeko-certifikat-2019.pdf"><img src="images/oeko.png" alt="Statskontrolleret økologisk logo"></a>
+                <a href="https://www.findsmiley.dk/27245"><img src="images/kontrolrapport.png" alt="Kontrolrapport logo"></a>
+            </div>
+
+            <div class="bundhoejre">
+                <a href="https://www.facebook.com/thistedbryghus/?epa=SEARCH_BOX"><img src="images/facebook.png" alt="Facebook logo"></a>
+                <a href="https://www.instagram.com/thistedbryghus/?hl=da"><img src="images/insta.png" alt="Instagram logo"></a>
+                <a href="https://www.youtube.com/channel/UCIF9BP-ya_74Qa5ADLA35KQ"><img src="images/yt.png" alt="Youtube logo"></a>
+            </div>
+
+        </div>
+    </footer>
+        <script src="js/burgermenu.js"></script>
+</body>
+
+</html>

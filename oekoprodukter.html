@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--altid unik title-->
+    <title>Økologiske produkter</title>
+    <meta name="description" content="Læs mere om Thisted Bryghus' økologiske øl, sodavand og saft. ">
+    <!--LAV BESKRIVELSE I SIDEN AF CONTENT-->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/produkter.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <!-- nav til web -->
+    <header>
+        <!-- følgende kode er lånt her: https://codepen.io/912lab/pen/LsplC -->
+
+
+        <div class="soegefelt">
+            <form id="demo-2">
+                <input type="search" placeholder="Search">
+            </form>
+        </div>
+
+        <!-- følgende kode er lånt her: https://codepen.io/912lab/pen/LsplC / SLUT -->
+
+        <div class="navbar">
+            <div class="tblogo"><a href="index.html">
+                    <!-- Denne kode er lånt her https://www.youtube.com/watch?v=_rkMYalklOI --><img src="images/logoer/tblogo.png" onmouseover="this.src='images/logoer/tborangelogo.png'" onmouseout="this.src='images/logoer/tblogo.png'" class="tblogo" alt="thisted bryghus logo"></a></div> <!-- Slutter her -->
+            <br>
+            <div class="dropdown"><a href="produkter.html"><button class="dropbutton">Produkter</button></a>
+                <div class="dropdown-content">
+                    <a href="forhandleroversigt.html">Forhandlerliste</a>
+                </div>
+            </div>
+
+            <div class="dropdown"><a href="nyheder.html"><button class="dropbutton">Nyheder</button></a>
+                <div class="dropdown-content">
+                    <a href="nyheder.html">Events</a>
+                </div>
+            </div>
+
+            <div class="dropdown"><a href="nyheder.html"><button class="dropbutton">
+                        Om bryghuset</button></a>
+                <div class="dropdown-content">
+                    <a href="ombryghuset.html">Bryghusets historie</a>
+                    <a href="nyheder.html">Awards</a>
+
+                </div>
+            </div>
+
+            <div class="dropdown"><a href="aktionaerer.html"><button class="dropbutton">
+                        Aktionærer</button></a>
+                <div class="dropdown-content">
+                    <a href="aktionaerer.html">Køb en aktie</a>
+                    <a href="aktionaerer.html">General forsamling</a>
+                    <a href="aktionaerer.html">Regnskab</a>
+                </div>
+            </div>
+
+            <div class="dropdown"><a href="kontakt.html"><button class="dropbutton">
+                        Kontakt</button></a>
+                <div class="dropdown-content">
+                    <a href="kontakt.html">Medarbejdere</a>
+                    <a href="kontakt.html">Sponsorater</a>
+                    <a href="kontakt.html">For studerende</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- nav til mobil -->
+        <!-- nedenstående er lånt fra     https://codepen.io/slyka85/pen/LbXYKQ?editors=1111 -->
+        <div id="menu-container">
+            <a href="index.html"><img src="images/logoer/tblogo.png" alt="thisted bryghus logo"></a>
+            <div id="menu-wrapper">
+                <div id="hamburger-menu"><span></span><span></span><span></span></div>
+                <!-- hamburger-menu -->
+            </div>
+            <!-- menu-wrapper -->
+            <ul class="menu-list accordion">
+                <li id="nav1" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link">Produkter</a>
+                </li>
+                <!-- accordion-toggle -->
+                <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="produkter.html">Vores produkter</a></li>
+                    <li><a class="head" href="forhandleroversigt.html">Forhandlere</a></li>
+                </ul>
+                <!-- menu-submenu accordon-content-->
+                <li id="nav2" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link">Nyheder</a>
+                </li>
+                <!-- accordion-toggle -->
+                <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="nyheder.html">Nyheder</a></li>
+                    <li><a class="head" href="nyheder.html">Events</a></li>
+
+                </ul>
+                <!-- menu-submenu accordon-content-->
+                <li id="nav3" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link">Om bryghuset</a>
+                </li>
+                <!-- accordion-toggle -->
+                <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="kontakt.html">Om os</a></li>
+                    <li><a class="head" href="ombryghuset.html">Bryghusets historie</a></li>
+                    <li><a class="head" href="kontakt.html">Awards</a></li>
+                </ul>
+                <!-- menu-submenu accordon-content-->
+                <!-- menu-submenu accordon-content-->
+                <li id="nav4" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link">Aktionærer</a>
+                </li>
+                <!-- accordion-toggle -->
+                <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="aktionaerer.html">Køb en aktie</a></li>
+                    <li><a class="head" href="aktionaerer.html">Generalforsamling</a></li>
+                    <li><a class="head" href="aktionaerer.html">Regnskab</a></li>
+
+                </ul>
+                <!-- menu-submenu accordon-content-->
+                <!-- menu-submenu accordon-content-->
+                <li id="nav5" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link">Kontakt</a>
+                </li>
+                <!-- accordion-toggle -->
+                <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="kontakt.html">Kontakt</a></li>
+
+                    <li><a class="head" href="kontakt.html">Medarbejdere</a></li>
+                    <li><a class="head" href="kontakt.html">Sponsorater</a></li>
+                    <li><a class="head" href="kontakt.html">For studerende</a></li>
+
+                </ul>
+                <!-- menu-submenu accordon-content-->
+                <!-- søge felt-->
+
+                <div class="soegefelt-mobil">
+                    <form id="demo-2">
+                        <input type="search" placeholder="Search">
+                    </form>
+                </div>
+                <!-- søge felt slut-->
+
+            </ul>
+            <!-- menu-list accordion-->
+        </div>
+        <!-- menu-container -->
+        <!-- kode er lånt fra     https://codepen.io/slyka85/pen/LbXYKQ?editors=1111 // SLUT -->
+
+    </header>
+
+
+    <main>
+        <div class="velkommen">
+            <h1 class="produkt-overskrift">Smagen af Thy</h1>
+            <img src="images/tbhus.jpg" class="husithy" alt="hus i Thy">
+        </div>
+            <div class="produktmenu">
+            <a href="produkter.html">flaskeøl</a>
+            <a href="underopbygning-produkt.html">fadøl</a>
+            <a href="saft.html">saft</a>
+            <a href="sodavand.html">sodavand</a>
+            <a href="underopbygning-produkt.html">smagsoplevelser</a>
+                        <a href="oekoprodukter.html"><span>økologiske produkter</span></a>
+
+        </div>
+        <h1>Økologiske øl</h1>
+
+        <div class="oel-flex">
+
+            <div class="oel-div"><img src="images/tboel/cirkler/gyruphavre.png" alt="gyrup" class="cirkel">
+                <img src="images/tboel/havre.png" alt="Økologisk Havre Mørk Ale" class="oel">
+            </div>
+
+            <div class="oel-div"><img src="images/tboel/cirkler/gyruprug.png" alt="gyrup" class="cirkel">
+                <img src="images/tboel/rug.png" alt="Økologisk Rug Mørk Ale" class="oel">
+            </div>
+
+            <div class="oel-div"><img src="images/tboel/cirkler/gyrupspelt.png" alt="gyrup" class="cirkel">
+                <img src="images/tboel/spelt.png" alt="Økologisk Spelt Lys Ale" class="oel">
+            </div>
+
+            <div class="oel-div"><img src="images/tboel/cirkler/paaskeoel-paaskeaeg.png" alt="Påskeøl" class="cirkel">
+                <img src="images/tboel/paaskeaeg.png" alt="Økologisk påskeæg lys lager" class="oel">
+            </div>
+
+            <div class="oel-div"><img src="images/tboel/cirkler/juleoel-julefred.png" alt="Juleøl" class="cirkel">
+                <img src="images/tboel/oekojulefred.png" alt="Økologisk julefred mørk lager" class="oel">
+            </div>
+
+            <div class="oel-div"><img src="images/tboel/cirkler/juleoel-juleren.png" alt="Juleøl" class="cirkel">
+                <img src="images/tboel/oekojuleren.png" alt="Økologisk juleren lysbock" class="oel">
+            </div>
+
+            <div class="oel-div"><img src="images/tboel/cirkler/pogc-oekoclassic.png" alt="Pilsner og Classic" class="cirkel">
+                <img src="images/tboel/oekoclassic.png" alt="Økologisk Thy classic mørk lager" class="oel">
+            </div>
+
+            <div class="oel-div"><img src="images/tboel/cirkler/pogc-oekopilsner.png" alt="Pilsner og Classic" class="cirkel">
+                <img src="images/tboel/oekopilsner.png" alt="Økologisk Thy pilsner lys lager" class="oel">
+            </div>
+
+
+
+        </div>
+
+
+
+        <h1>Økologiske Thy Sodavand</h1>
+        <div class="sodavand-flex">
+            <div class="sodavand-div"><img src="images/sodavand/cirkler/clemon.png" alt="Thy Sodavand" class="cirkel-sodavand">
+                <img src="images/sodavand/lemon.png" alt="Økologisk Thy sodavand med lemon" class="sodavand">
+            </div>
+
+            <div class="sodavand-div"><img src="images/sodavand/cirkler/crabarber.png" alt="Thy Sodavand" class="cirkel-sodavand">
+                <img src="images/sodavand/rabarber.png" alt="Økologisk Thy sodavand med rabarber" class="sodavand">
+            </div>
+
+
+            <div class="sodavand-div"><img src="images/sodavand/cirkler/chylde.png" alt="Thy Sodavand" class="cirkel-sodavand">
+                <img src="images/sodavand/hylde.png" alt="Økologisk Thy sodavand med hyldeblomst" class="sodavand">
+            </div>
+
+            <div class="sodavand-div"><img src="images/sodavand/cirkler/cappelsin.png" alt="Thy Sodavand" class="cirkel-sodavand">
+                <img src="images/sodavand/appelsin.png" alt="Økologisk Thy sodavand med appelsin" class="sodavand">
+            </div>
+
+
+        </div>
+        <h1>Økologisk Thy Saft</h1>
+
+        <div class="sodavand-flex">
+            <div class="sodavand-div"><img src="images/saft/cirkler/blaabaer.png" alt="Thy Saft" class="cirkel-sodavand">
+                <img src="images/saft/blaabaer.png" alt="økologisk Thy saft med blåbær" class="sodavand">
+            </div>
+
+            <div class="sodavand-div"><img src="images/saft/cirkler/stikkelsbaer.png" alt="Thy Saft" class="cirkel-sodavand">
+                <img src="images/saft/stikkelsbaer.png" alt=" økologisk Thy saft med stikkelsbær" class="sodavand">
+            </div>
+
+            <div class="sodavand-div"><img src="images/saft/cirkler/havtorn.png" alt="Thy Saft" class="cirkel-sodavand">
+                <img src="images/saft/havtorn.png" alt=" økologisk Thy saft med havtorn" class="sodavand">
+            </div>
+            <div class="sodavand-div"><img src="images/saft/cirkler/solbaer.png" alt="Thy Saft" class="cirkel-sodavand">
+                <img src="images/saft/solbaer.png" alt=" økologisk Thy saft med solbær" class="sodavand">
+            </div>
+
+        </div>
+
+
+        <a href="#top"><img src="images/pilop.svg" class="pil-op" alt="til toppen af siden"></a>
+
+
+
+
+
+    </main>
+
+    <footer>
+        <div class="venstre">
+            <a href="index.html"><img src="images/logoer/logo%20hvid.png" alt="Thisted Bryghus logo i hvid"></a>
+            <a href="produkter.html">Produkter</a>
+            <a href="nyheder.html">Nyheder</a>
+            <a href="ombryghuset.html">Om bryghuset</a>
+            <a href="aktionaerer.html">Aktionærer</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="">Cookie- og privatlivspolitik</a>
+        </div>
+
+        <form class="midt">
+            <div class="container">
+                <h3>Tilmeld dig vores nyhedsbrev</h3>
+            </div>
+
+            <div>
+                <input type="text" placeholder="Navn" name="name" required>
+                <input type="text" placeholder="Din email" name="mail" required>
+            </div>
+
+            <div>
+                <input type="submit" value="Tilmeld">
+            </div>
+        </form>
+
+
+        <div class="hoejre">
+            <ul>
+                <li>A/S THISTED BRYGHUS</li>
+                <br>
+                <li>Bryggerivej 10</li>
+                <li>7700 Thisted</li>
+                <li>Danmark</li>
+                <br>
+                <li>+45 97 92 23 22</li>
+                <br>
+                <li>thy@thisted-bryghus.dk</li>
+            </ul>
+        </div>
+
+        <div class="bund">
+            <div class="bundvenstre">
+                <p>© 2020 Thisted Bryghus</p>
+                <a href="https://thisted-bryghus.dk/media/1300/oeko-certifikat-2019.pdf"><img src="images/oeko.png" alt="Statskontrolleret økologisk logo"></a>
+                <a href="https://www.findsmiley.dk/27245"><img src="images/kontrolrapport.png" alt="Kontrolrapport logo"></a>
+            </div>
+
+            <div class="bundhoejre">
+                <a href="https://www.facebook.com/thistedbryghus/?epa=SEARCH_BOX"><img src="images/facebook.png" alt="Facebook logo"></a>
+                <a href="https://www.instagram.com/thistedbryghus/?hl=da"><img src="images/insta.png" alt="Instagram logo"></a>
+                <a href="https://www.youtube.com/channel/UCIF9BP-ya_74Qa5ADLA35KQ"><img src="images/yt.png" alt="Youtube logo"></a>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="js/burgermenu.js"></script>
+
+</body>
+
+</html>
