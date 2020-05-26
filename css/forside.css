@@ -1,0 +1,411 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F0EDDC;
+}
+
+.signatur-knap {
+    background-color: transparent;
+    border-radius: 28px;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'playfair display';
+    font-size: 17px;
+    padding: 12px 45px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0px 1px 1px #000000;
+    align-self: center;
+    width: 22%;
+    margin: 0 28%;
+    grid-area: 2 / 1 / 4 / 4;
+    z-index: 1;
+}
+
+.signatur-knap:hover {
+    background-color: transparent;
+    border: 2px solid #F9C553;
+    color: #F9C553;
+}
+
+.signatur-knap:active {}
+
+
+.udvalg {
+    background-color: transparent;
+    border-radius: 28px;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'playfair display';
+    font-size: 17px;
+    padding: 12px 45px;
+    text-decoration: none;
+    text-shadow: 0px 1px 1px #000000;
+    text-align: center;
+    align-self: center;
+    margin: 0 31%;
+    width: 22%;
+    grid-area: 2 / 1 / 3 / 5;
+    z-index: 2;
+}
+
+.udvalg:hover {
+    background-color: transparent;
+    border: 2px solid #F9C553;
+    color: #F9C553;
+}
+
+.udvalg:active {}
+
+.listelink {
+    background-color: transparent;
+    border-radius: 28px;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'playfair display';
+    font-size: 17px;
+    padding: 12px 45px;
+    text-decoration: none;
+    text-shadow: 0px 1px 1px #000000;
+    align-self: center;
+    margin: 2% 0;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.listelink:hover {
+    background-color: transparent;
+    border: 2px solid #F9C553;
+    color: #F9C553;
+}
+
+.listelink:active {}
+
+
+
+.oplevelse:hover {
+    background-color: transparent;
+    border: 2px solid #F9C553;
+    color: #F9C553;
+}
+
+.oplevelse:active {}
+
+
+/* indhold til main */
+
+@media all and (min-width: 1024px) {
+    .container-main {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 700px;
+        margin-top: 25px;
+
+    }
+
+    /* grid-row-start / grid-column-start / grid-row-end / grid-column-end. */
+
+    .galleri {
+        width: 45%;
+        height: 95%;
+        overflow: hidden;
+        display: grid;
+        grid-auto-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+
+    }
+
+    .galleri h2 {
+        grid-area: 1 / 1 / 2 / 3;
+
+        padding-left: 120px;
+        padding-top: 200px;
+        font-size: 40px;
+        color: #FFF;
+        font-weight: lighter;
+        z-index: 1;
+
+    }
+
+    .galleri-bg {
+        width: 100%;
+        height: auto;
+        grid-area: 1 / 1 / 4 / 4;
+        z-index: 0;
+
+    }
+
+    .aarets-bh {
+        grid-area: 1 / 1 / 2 / 2;
+        z-index: 1;
+        width: 90px;
+        padding-left: 50px;
+    }
+
+
+
+    .smag-thy {
+        width: 45%;
+        height: 70%;
+        display: grid;
+        grid-auto-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .smag-thy h2 {
+        grid-area: 1 / 1 / 2 / 4;
+        text-align: center;
+        align-self: center;
+        font-size: 30px;
+        font-weight: lighter;
+
+    }
+
+    .bg {
+        grid-area: 1 / 1 / 3 / 5;
+        z-index: -1;
+        width: 100%;
+
+    }
+
+    .oel {
+        grid-area: 1 / 3 / 2 / 5;
+        z-index: 2;
+        width: 70%;
+
+        justify-self: center;
+        align-self: center;
+    }
+
+
+
+    .forhandlerliste {
+        width: 45%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        background-color: #9B965D;
+    }
+
+
+    .smagsoplevelser {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+        margin-top: 25px;
+
+    }
+
+    .smagsoplevelser img {
+        z-index: 0;
+        width: 95%;
+        position: relative;
+    }
+
+    .smagsoplevelser h2 {
+        z-index: 1;
+        color: #FFF;
+        position: absolute;
+        align-self: center;
+        justify-content: center;
+        font-size: 50px;
+        margin: 0;
+        font-weight: lighter;
+
+    }
+
+    .oplevelse {
+        background-color: transparent;
+        border-radius: 28px;
+        border: 2px solid #ffffff;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: 'playfair display';
+        font-size: 17px;
+        padding: 12px 45px;
+        text-decoration: none;
+        text-shadow: 0px 1px 1px #000000;
+        text-align: center;
+        align-self: center;
+        z-index: 2;
+        position: absolute;
+        margin-top: 90px;
+
+    }
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+
+
+    main {
+        margin: 1%;
+    }
+
+
+    .smag-thy {
+        width: 45%;
+        height: 70%;
+        display: grid;
+        grid-template-rows: auto;
+        position: relative;
+    }
+
+    .container-main {
+        height: 100%;
+        margin-top: 2%;
+
+    }
+
+    .galleri {
+        width: 100%;
+        margin-bottom: 1%;
+        position: relative;
+    }
+
+    .bg {
+        width: 100%;
+        position: absolute;
+    }
+
+    .oel {
+        width: 35%;
+        top: 14%;
+        right: -1em;
+        position: absolute;
+
+    }
+
+    .aarets-bh {
+        width: 12%;
+        margin-left: 2%;
+        position: absolute;
+    }
+
+    .galleri-bg {
+        width: 100%;
+        z-index: 0;
+    }
+
+    .galleri h2 {
+        font-size: 20px;
+        position: absolute;
+        z-index: 1;
+        font-family: "playfair display";
+        margin: 17%;
+        top: 12%;
+    }
+
+    .signatur-knap {
+        border: 2px solid #ffffff;
+        font-size: 15px;
+        padding: 8px 18px;
+        position: absolute;
+        bottom: 1%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        width: 42%;
+    }
+
+
+    .smag-thy {
+        width: 100%;
+        margin-bottom: 1%;
+        margin-top: 1%;
+    }
+
+
+    .smag-thy h2 {
+        font-size: 20px;
+        position: absolute;
+        font-family: "playfair display";
+        left: 19%;
+        text-align: center;
+        top: 30%;
+    }
+
+    .udvalg {
+        font-size: 15px;
+        padding: 8px 18px;
+        margin-top: 55%;
+        width: 42%;
+        margin-left: 24%;
+
+    }
+
+    .forhandlerliste {
+        width: 100%;
+        position: relative;
+        background-color: #9B965D;
+        height: 20%;
+        bottom: 10%;
+        margin-top: 32px;
+        text-align: center;
+    }
+
+    .listelink {
+        bottom: 1%;
+        left: 50%;
+        padding: 8px 18px;
+        width: 42%;
+        font-size: 15px;
+
+
+    }
+
+    .smagsoplevelser {
+        width: 100%;
+        margin-top: 2%;
+        position: relative;
+    }
+
+    .smagsoplevelser img {
+        width: 100%;
+        height: 20%;
+    }
+
+    .smagsoplevelser h2 {
+        display: none;
+    }
+
+    .oplevelse {
+        background-color: transparent;
+        border-radius: 28px;
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        font-family: 'playfair display';
+        font-size: 15px;
+        text-decoration: none;
+        text-shadow: 0px 1px 1px #000000;
+        text-align: center;
+        align-self: center;
+        position: absolute;
+        bottom: 1%;
+        left: 50%;
+        width: 42%;
+        transform: translate(-50%, -50%);
+        padding: 8px 18px;
+    }
+
+}
+
+
+/*MEDIA LAPTOP*/

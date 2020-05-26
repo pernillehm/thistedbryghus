@@ -1,0 +1,301 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #EFEDDD;
+}
+
+/*billede og tekst øverst på siden*/
+.velkommen {
+    position: relative;
+    text-align: center;
+}
+
+.husithy {
+    width: 100%;
+    height: 10%;
+}
+
+.produkt-overskrift {
+    font-family: "playfair display";
+    font-size: 3em;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+/*billede og tekst øverst på siden slut*/
+
+/*styling til ekstra produkt menu start*/
+.produktmenu {
+    text-align: center;
+    margin-top: 1.5%;
+
+}
+
+.produktmenu > a {
+    text-decoration: none;
+    color: black;
+    font-family: "roboto";
+    font-weight: lighter;
+    margin: 2%;
+}
+
+.produktmenu > a:hover {
+    color: #F9C553;
+    font-family: "roboto";
+    font-weight: lighter;
+}
+
+/*gør at den valgte side står med fed skrift*/
+
+span {
+    font-weight: bolder;
+}
+
+/*styling til ekstra produkt menu slut*/
+
+/* starter styling af ølsiden*/
+.cirkel {
+    width: 70%;
+    z-index: 0;
+}
+
+.oel-div {
+    position: relative;
+    margin-top: 25%;
+
+}
+
+
+.oel-flex {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 3%;
+}
+
+/* slutter styling af ølsiden*/
+/*navigationspil*/
+.pil-op {
+    width: 4%;
+    margin-left: 95%;
+    position: sticky;
+    position: -webkit-sticky;
+
+    bottom: 1rem;
+    align-self: flex-end;
+}
+
+/*navigationspil slut*/
+/*styling af sodavand og saft side start*/
+
+.cirkel-sodavand {
+    width: 70%;
+    z-index: 0;
+}
+
+.sodavand-div {
+    position: relative;
+    margin-top: 25%;
+}
+
+.sodavand-flex {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 3%;
+}
+
+/*styling af sodavand og saft side slut*/
+
+/* styling af økologi side start*/
+
+h1 {
+    font-family: "playfair display";
+    font-weight: lighter;
+    font-size: 1.5em;
+    margin-left: 13%;
+    margin-bottom: -1em;
+    margin-top: 9%;
+}
+
+
+/*MEDIA QUERY MOBILE */
+
+@media all and (max-width: 599px) {
+
+    .pil-op {
+        position: sticky;
+        position: -webkit-sticky;
+    }
+
+
+    /*overskrift til mobil*/
+    .produkt-overskrift {
+        font-size: 1.5em;
+        left: 37%;
+    }
+
+    .pil-op {
+        width: 8%;
+        margin-left: 89%;
+
+    }
+
+    /* starter styling af ølsiden til mobil*/
+
+    .cirkel {
+        width: 130%;
+        z-index: 0;
+        text-align: center;
+        margin-left: -6em;
+    }
+
+    .oel-div {
+        position: relative;
+        margin-top: 25%;
+        text-align: center;
+
+    }
+
+    .oel {
+        width: 52%;
+        position: absolute;
+        left: 25%;
+        top: -2em;
+    }
+
+    .oel-flex {
+        display: grid;
+        grid-template-columns: auto auto;
+
+    }
+
+    /* slutter styling af ølsiden til mobil*/
+
+    /* starter styling af sodavand/saft siden til mobil*/
+
+    .cirkel-sodavand {
+        width: 130%;
+        z-index: 0;
+        text-align: center;
+        margin-left: -6em;
+    }
+
+    .sodavand-div {
+        position: relative;
+        margin-top: 25%;
+        text-align: center;
+
+    }
+
+    .sodavand {
+        width: 52%;
+        position: absolute;
+        left: 25%;
+        top: -2em;
+    }
+
+    .saft {
+        width: 52%;
+        position: absolute;
+        left: 25%;
+        top: -1.5em;
+    }
+
+    .sodavand-flex {
+        display: grid;
+        grid-template-columns: auto auto;
+
+    }
+
+
+    h1 {
+        font-family: "playfair display";
+        font-weight: lighter;
+        font-size: 1em;
+        margin-left: 13%;
+        margin-bottom: -1em;
+        margin-top: 9%;
+    }
+
+    .husithy {
+
+        margin-top: 5%;
+    }
+
+    .produktmenu > a {
+        display: block;
+        line-height: 1.5em;
+
+    }
+
+    /* slutter styling af saft/sodavand til mobil*/
+
+}
+
+
+/*MEDIA QUERY TABLET AND ABOVE*/
+
+@media all and (min-width: 600px) {
+
+    .oel {
+        width: 32%;
+        position: absolute;
+        left: 34%;
+        top: -2.5em;
+    }
+
+    .sodavand {
+        width: 32%;
+        position: absolute;
+        left: 34%;
+        top: -2.1em;
+    }
+
+    .saft {
+        width: 32%;
+        position: absolute;
+        left: 34%;
+        top: -1.9em;
+    }
+
+    .husithy {
+        margin-top: 7%;
+    }
+}
+
+
+
+/*MEDIA QUERY LAPTOP*/
+
+
+@media all and (min-width: 1024px) {
+
+    .oel {
+        width: 32%;
+        position: absolute;
+        left: 34%;
+        top: -4.5em;
+    }
+
+    .sodavand {
+        width: 32%;
+        position: absolute;
+        left: 34%;
+        top: -4em;
+    }
+
+    .saft {
+        width: 32%;
+        position: absolute;
+        left: 34%;
+        top: -3.6em;
+    }
+
+    .husithy {
+        margin-top: 2%;
+    }
+
+
+}

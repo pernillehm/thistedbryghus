@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #EFEDDD;
+}
+
+/*billede øverst på siden*/
+
+.nytbryghus {
+    width: 100%;
+    height: 30%;
+    margin-top: 4%;
+}
+
+/*billede øverst på slut*/
+
+/*tekst styling start*/
+.overskrift-til-historie {
+    text-align: center;
+    font-family: "playfair display";
+    font-weight: lighter;
+    margin-top: 1%;
+}
+
+.broedtekst-til-historie {
+    font-family: roboto;
+    font-weight: lighter;
+    margin: 2%;
+    line-height: 1.7;
+    font-size: 0.9em;
+    font-weight: lighter;
+    border: 3px solid #9B9663;
+    width: 30%;
+    padding: 2%;
+    position: absolute;
+}
+
+/*tekst styling slut*/
+
+/*scrollboks styling start*/
+.scrollboks {
+    background: #EFEDDD;
+    color: black;
+    width: 60%;
+    height: 590px;
+    overflow: scroll;
+    z-index: 0;
+    margin-left: 37%;
+    margin-top: 3.5%;
+    margin-bottom: 5%;
+}
+
+.scrollboks > div {
+    padding: 10%;
+    text-align: center;
+}
+
+#timeline-et,
+#timeline-to,
+#timeline-tre,
+#timeline-fire,
+#timeline-fem,
+#timeline-seks,
+#timeline-syv,
+#timeline-otte {
+    float: right;
+}
+
+/* Skjuler scrollbaren i den lille scrollboks*/
+.scrollboks::-webkit-scrollbar {
+    display: none;
+}
+
+/* Slutter her */
+
+/*scrollboks styling slut*/
+
+/*tidslinje styling start*/
+.jubilaum-billede {
+    width: 40%;
+}
+
+.timeline-broedtekst {
+    font-family: roboto;
+    font-weight: lighter;
+    margin-top: -2em;
+}
+
+.timeline-overskrift {
+    font-family: "playfair display";
+    font-weight: lighter;
+
+}
+
+
+/* Animation til tidslinjeindhold*/
+.timeline-et {
+    animation: fadeIn ease 10s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animation slut */
+/*tidslinje styling start*/
+
+.kun-til-mobil {
+    display: none;
+}
+
+.kun-til-tablet {
+    display: none;
+}
+
+/*MEDIA QUERY MOBILE */
+
+@media all and (max-width: 599px) {
+
+    .overskrift-til-historie {
+        margin-top: 2%;
+        font-size: 1.5em;
+    }
+
+    .nytbryghus {
+        margin-top: 6%;
+    }
+
+    /*scrollboks styling til mobil start*/
+    .scrollboks {
+        background: #EFEDDD;
+        color: black;
+        width: 100%;
+        height: 300px;
+        overflow: scroll;
+        margin-bottom: 15%;
+        text-align: center;
+        margin-left: -0.1em;
+    }
+
+    /*scrollboks styling til mobil slut*/
+
+    /*tekstboks styling til mobil start*/
+
+    .broedtekst-til-historie {
+        font-family: roboto;
+        font-weight: lighter;
+        margin: 2%;
+        line-height: 1.7;
+        font-size: 0.9em;
+        font-weight: lighter;
+        border: 2px solid #9B9663;
+        width: 90%;
+        margin-top: 78%;
+        padding: 2%;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+
+    }
+
+    /*tekstboks styling til mobil slut*/
+
+    .kun-til-mobil {
+        display: block;
+    }
+
+}
+
+/*MEDIA QUERY TABLET */
+
+
+@media all and (min-width: 600px) {
+
+
+    .nytbryghus {
+        margin-top: 6%;
+    }
+
+    /*scrollboks styling til tavlet start*/
+    .scrollboks {
+        background: #EFEDDD;
+        color: black;
+        width: 100%;
+        height: 450px;
+        overflow: scroll;
+        margin-bottom: 15%;
+        text-align: center;
+        margin-left: -0.1em;
+    }
+
+    /*scrollboks styling til tablet slut*/
+
+    /*tekstboks styling til tablet start*/
+
+    .broedtekst-til-historie {
+        font-family: roboto;
+        font-weight: lighter;
+        margin: 2%;
+        line-height: 1.7;
+        font-size: 0.9em;
+        font-weight: lighter;
+        border: 3px solid #9B9663;
+        width: 90%;
+        margin-top: 60%;
+        padding: 2%;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+
+    /*tekstboks styling til tablet slut*/
+
+    .kun-til-mobil {
+        display: none;
+    }
+
+    .kun-til-tablet {
+        display: inherit;
+    }
+}
+
+
+/*MEDIA LAPTOP*/
+
+
+@media all and (min-width: 1024px) {
+
+    .scrollboks {
+        background: #EFEDDD;
+        color: black;
+        width: 60%;
+        height: 590px;
+        overflow: scroll;
+        z-index: 0;
+        margin-left: 37%;
+        margin-top: 3.5%;
+        margin-bottom: 5%;
+    }
+
+
+    .broedtekst-til-historie {
+        font-family: roboto;
+        font-weight: normal;
+        margin: 2%;
+        line-height: 1.7;
+        font-size: 0.9em;
+        font-weight: lighter;
+        border: 3px solid #9B9663;
+        width: 30%;
+        padding: 2%;
+        position: absolute;
+        margin-left: 9%;
+    }
+
+    .timeline-broedtekst {
+        margin: 12%;
+        margin-top: -2em;
+    }
+
+    .kun-til-tablet {
+        display: none;
+    }
+
+    .nytbryghus {
+        margin-top: 2%;
+    }
+
+}

@@ -1,0 +1,304 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F0EDDC;
+}
+
+.billedtop {
+    background: url("../images/thy-kasser.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 6%;
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+}
+
+.billedtop h1 {
+    padding-top: 6%;
+    font-family: "playfair display";
+}
+
+main {
+    margin: 0 2%;
+}
+
+h2 {
+    text-align: center;
+    font-family: "playfair display";
+    
+
+}
+
+.oversigt {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+}
+
+.forhandler {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0;
+}
+
+.forhandler img {
+    width: 30%;
+}
+
+.depoter {
+    margin: 0 8.5%;
+}
+
+.depoter h2 {
+    text-align: left;
+    font-family: "playfair display";
+
+}
+
+.depoter p {
+    text-align: left;
+    font-family: 'Roboto';
+}
+
+.en {
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 80px;
+    width: 85%;
+    background-color: #9B965D;
+    font-size: 16px
+}
+
+.en p {
+    align-self: center;
+    width: 20%;
+}
+
+.to {
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 80px;
+    width: 85%;
+    font-size: 16px;
+}
+
+.to p {
+    align-self: center;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion-forhandler {
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 85%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: 0 8.5%;
+    font-size: 20px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.activate,
+.accordion-forhandler:hover {
+    background-color: #F9C553;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    background-color: #F0EDDC;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 8.5%;
+}
+
+.accordion-forhandler:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+footer {
+    margin-top: 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .billedtop h1 {
+        font-size: 25px;
+    }
+
+    .billedtop {
+        margin-top: 6%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .forhandler {
+        width: 33%;
+        margin: 5% 0;
+    }
+
+    .forhandler img {
+        width: 55%;
+    }
+
+    .depoter {
+        margin: 0;
+    }
+
+    .depoter p {
+        margin: 0;
+        font-size: 12px;
+        line-height: 20px;
+        word-spacing: 2px;
+    }
+
+    .skjul {
+        display: none;
+    }
+
+    .accordion {
+        font-size: 15px;
+        margin: 0;
+        width: 99%;
+    }
+
+    .panel {
+        margin: 0;
+        width: 99%;
+    }
+
+    .en {
+        font-size: 12px;
+        font-family: 'Roboto';
+        table-layout: auto;
+    }
+
+    .to {
+        font-size: 12px;
+        font-family: 'Roboto';
+    }
+
+    .skjul-pc {
+        align-self: center;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .depoter p {
+        margin-bottom: 2%;
+    }
+
+    .en {
+        width: 99%;
+    }
+
+    .en p {
+        width: 24%;
+    }
+
+    .to {
+        width: 99%;
+    }
+
+    .to p {
+        width: 24%;
+    }
+
+    .accordion-forhandler {
+        width: 99%;
+        text-align: left;
+        font-size: 16px;
+        font-family: 'Roboto';
+        margin: 2% 0;
+    }
+
+    .skjul {
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .skjul {
+        display: none;
+    }
+
+    .en {
+        width: 85%;
+    }
+
+    .en p {
+        width: 24%;
+        text-align: left;
+    }
+
+    .to {
+        width: 85%;
+    }
+
+    .to p {
+        width: 24%;
+        text-align: left;
+    }
+
+    .en a {
+        align-self: center;
+    }
+
+    .to a {
+        align-self: center;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .skjul-pc {
+        display: none;
+    }
+
+    .en {
+        text-align: left;
+    }
+
+    .to {
+        text-align: left;
+    }
+
+    .en p {
+        width: 15%
+    }
+
+    .to p {
+        width: 15%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
